@@ -1,0 +1,16 @@
+name: monitoring
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Ping test
+        run: |
+          set -e;
+          while IFS="" read -r p || [ -n "$p" ]
+          do
+            echo "$p";
+          done < websites.txt;
