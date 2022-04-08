@@ -2,14 +2,16 @@ name: monitoring
 on: push
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
       - name: Ping ipv4 test
         run: sh ./ping4.sh
-        shell: bash
       - name: Ping ipv6 test
         run: sh ./ping6.sh
-        shell: bash
+      - name: Validate certificate
+        run: sh ./certificate.sh
+      - name: Test website status code
+        run: sh ./website.sh
