@@ -8,10 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Ping ipv4 test
-        run: sh ./ping4.sh
+        run: sh ping4.sh
       - name: Ping ipv6 test
-        run: sh ./ping6.sh
+        run: sh ping6.sh
       - name: Validate certificate
-        run: sh ./certificate.sh
+        run: sh certificate.sh
       - name: Test website status code
-        run: sh ./website.sh
+        run: sh website.sh
