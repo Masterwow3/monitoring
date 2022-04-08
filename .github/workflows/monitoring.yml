@@ -7,10 +7,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Ping test
-        run: |
-          set -e;
-          while IFS="" read -r p || [ -n "$p" ]
-          do
-            echo "$p";
-          done < websites.txt;
+      - name: Ping ipv4 test
+        run: sh ./ping4.sh
+      - name: Ping ipv6 test
+        run: sh ./ping6.sh
