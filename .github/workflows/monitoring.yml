@@ -1,5 +1,5 @@
 name: monitoring
-on: 
+on:
   push:
   schedule:
     - cron: "*/15 * * * *"
@@ -10,11 +10,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Ping ipv4 test
-        run: sh ping4.sh
-      - name: Ping ipv6 test
-        run: sh ping6.sh
+      - name: Test ipv4 website status code
+        run: sh websiteV4.sh
+      - name: Test ipv6 website status code
+        run: sh websiteV6.sh
       - name: Validate certificate
         run: sh certificate.sh
-      - name: Test website status code
-        run: sh website.sh
