@@ -1,8 +1,8 @@
 name: monitoring
 on:
-  push:
- # schedule:
- #   - cron: "*/15 * * * *"
+  schedule:
+    - cron: "*/15 * * * *"
+#  push:
 
 jobs:
   test:
@@ -12,8 +12,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Test ipv4 website status code
         run: sh websiteV4.sh
-      - name: Test 
-        run: wget -6 --no-check-certificate --spider -S "https://echbwien.at/" 2>&1
       - name: Test ipv6 website status code
         run: sh websiteV6.sh
       - name: Validate certificate
