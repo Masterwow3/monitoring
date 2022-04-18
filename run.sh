@@ -1,3 +1,4 @@
+#!/bin/bash
 set -e
 
 sh ./websiteV4.sh 2>&1 | tee results/websiteV4.txt
