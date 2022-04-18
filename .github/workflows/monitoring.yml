@@ -13,4 +13,4 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
       - name: Run monitoring checks
-        run: sh run.sh
+        run: bash run.sh
