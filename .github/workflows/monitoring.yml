@@ -2,7 +2,7 @@ name: monitoring
 on:
   schedule:
     - cron: "*/15 * * * *"
-#  push:
+  push:
 
 jobs:
   test:
