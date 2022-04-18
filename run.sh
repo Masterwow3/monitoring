@@ -1,8 +1,8 @@
 set -e
 
-websiteV4.sh 2>&1 | tee results/websiteV4.txt
-websiteV6.sh 2>&1 | tee results/websiteV6.txt
-certificate.sh 2>&1 | tee results/certificate.txt
+./websiteV4.sh 2>&1 | tee results/websiteV4.txt
+./websiteV6.sh 2>&1 | tee results/websiteV6.txt
+./certificate.sh 2>&1 | tee results/certificate.txt
 
 
 if [[ `git status --porcelain` ]]; then
@@ -13,6 +13,4 @@ if [[ `git status --porcelain` ]]; then
   git commit -am "update results"
   git push
   exit 1
-else
-  # No changes
 fi
