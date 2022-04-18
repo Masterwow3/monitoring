@@ -7,7 +7,9 @@ certificate.sh 2>&1 | tee results/certificate.txt
 
 if [[ `git status --porcelain` ]]; then
   # Changes
-  git commit -a -m "update"
+  git config --global user.name 'CI'
+  git config --global user.email 'masterwow3@users.noreply.github.com'
+  git commit -am "update results"
   git push
   exit 1
 else
