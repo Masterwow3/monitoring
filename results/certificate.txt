@@ -3,18 +3,18 @@ Certificate will not expire
 Certificate is not expired
 --------------------------------------
 johannapartment.blackknight.solutions:443
-Certificate will expire
-Certificate is expired
+Certificate will not expire
+Certificate is not expired
 --------------------------------------
 thepreach.blackknight.solutions:443
-Certificate will expire
-Certificate is expired
+Certificate will not expire
+Certificate is not expired
 --------------------------------------
 mama.verbundeneherzen.de:443
 Certificate will not expire
 Certificate is not expired
 --------------------------------------
 finanzen.blackknight.solutions:443
-Certificate will expire
-Certificate is expired
+Certificate will not expire
+Certificate is not expired
 --------------------------------------
