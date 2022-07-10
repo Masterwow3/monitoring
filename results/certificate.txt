@@ -2,6 +2,10 @@ echbwien.at:443
 Certificate will not expire
 Certificate is not expired
 --------------------------------------
+sdg-tonstudio.de:443
+Certificate will not expire
+Certificate is not expired
+--------------------------------------
 johannapartment.blackknight.solutions:443
 Certificate will not expire
 Certificate is not expired
